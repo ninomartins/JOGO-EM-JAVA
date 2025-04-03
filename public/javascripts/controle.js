@@ -173,7 +173,6 @@ function atualizar() {
 
 function gameover() {
     document.querySelector('.content_jogo').innerHTML = '<div> <h1> GAME OVER </h1> </div>';
-    alert('Voce prdeu')
 }
 
 // Detecta quando uma tecla é pressionada
