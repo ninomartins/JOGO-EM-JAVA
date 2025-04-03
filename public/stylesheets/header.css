@@ -1,0 +1,22 @@
+.link {
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-around;
+    color: white;
+}
+.link_1, .link_2 {
+    background-color: black;
+    cursor: pointer;
+    padding:0 10px;
+    border-radius: 7px;
+}
+.link_1:hover  {
+    background-color: rgb(165, 77, 77);
+}
+.link_2:hover  {
+    background-color: rgb(165, 77, 77);
+}
+
+
+

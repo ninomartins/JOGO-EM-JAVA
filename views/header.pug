@@ -1,0 +1,48 @@
+
+header(class='cabecalho')
+ nav(class='menu')
+  div(class='links')
+   div(class='link')
+    div(class='link_1' onclick="clicar('link_1')")
+     li Jogar
+    div(class='link_2' onclick='clicar()')
+     li Créditos
+    if title == 'link'
+     div(class='link_2' onclick="clicar('voltar')")
+      li Voltar
+     
+
+script.
+ function clicar(ele){
+ const link1 = document.querySelector('.link_1');
+ const link2 = document.querySelector('.link_2');
+ const name = ele
+
+ if( ele == 'link_1'){
+     const a = document.createElement('a');
+     a.href = '/users/jogar'
+     a.style.display = 'none'
+     document.body.appendChild(a)
+     a.click()
+     document.body.removeChild(a)
+ }else{
+     const a = document.createElement('a');
+     a.href = '/creditos'
+     a.style.display = 'none'
+     document.body.appendChild(a)
+     a.click()
+     document.body.removeChild(a)
+ }
+ if(ele == 'voltar'){
+      const a = document.createElement('a');
+     a.href = '/'
+     a.style.display = 'none'
+     document.body.appendChild(a)
+     a.click()
+     document.body.removeChild(a)
+
+ }
+   
+ }
+
+  
